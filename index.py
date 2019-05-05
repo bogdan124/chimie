@@ -19,6 +19,10 @@ def home():
 def importanta():
     return render_template("importanta.html")
 
+@app.route('/acasa',methods=['POST','GET'])
+def acasa():
+    return render_template("home1.html")
+
 
 if __name__=='__main__':
     app.run(debug=True,port=5444)
